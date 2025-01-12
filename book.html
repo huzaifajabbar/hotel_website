@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" type="text/css" href="book.css"/>
+<link rel="stylesheet" type="text/css" href="dhtmlxcalendar.css"/>
+	
+<script src="dhtmlxcalendar.js"></script>
+	
+<style>
+    #calendar,
+    #calendar2,
+    #calendar3,
+    #calendar4 {
+        border: 1px solid #909090;
+        font-family: Tahoma;
+        font-size: 12px;
+    }
+</style>
+	<script>
+		var myCalendar;
+		function doOnLoad() 
+			{
+			myCalendar = new dhtmlXCalendarObject(["calendar","calendar2","calendar3","calendar4",]);
+			}
+	</script>
+</head>
+<body onload="doOnLoad();">
+<div id="holder"><a href="index.html"><img src="logo.jpg" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+		<li><a href="contact.html">Contact</a></li>
+    	<li><a href="login.html">Login</a></li>
+    	<li><a href="overview.html">Explore</a></li>
+    	<li><a href="foodmenu.html">Food menu</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div><!--header -->
+<div id="book">
+<h1>Booking</h1>
+	<div id="a1">
+    <p>&nbsp;</p>
+    
+    <form action="http://localhost/Hotel management system/book.php" method="post">
+		 <label for="name">Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="name" name="name" placeholder="Full Name" required="" tabindex="1" type="text"><br><br>
+		
+		<label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			<input id="email" name="email" placeholder="Email" required="" type="email"><br><br>
+		
+		<label for="mobile">Mobile No:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		<input id="phone" name="mobile" placeholder="Number" required="" type="text"> <br><br>
+		
+		<div style="position:relative;height:80px;">
+		
+		<label for="in">Check in:</label> &nbsp;&nbsp;&nbsp;
+            		<input id="calendar3" name="in" placeholder="2024-05-02" required="" type="text"> <br><br>
+		
+					&nbsp;<label for="out">Check out:</label> &nbsp;&nbsp;
+            		<input id="calendar4" name="out" placeholder="2024-05-05" required="" type="text"> <br><br>
+		
+		</div>
+		Room Type:<select name="room">
+				<option value="A/C">A/C</option>
+				<option value="Non-A/C">Non-A/C</option>
+			</select>
+			<select  name="type">
+				<option value="single">Single</option>
+				<option value="double">Double</option>
+				<option value="three">Three</option>
+			</select>
+		<br/><br/><br/>
+<a href="payment.html"><input type="submit" name="submit" value="Book"/></a>
+<input type="reset" name="reset" value="Reset" />
+</form>

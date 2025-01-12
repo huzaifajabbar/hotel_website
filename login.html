@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="login.css"/>
+<script type="text/javascript">
+function clicked() {
+    alert('Successfully submitted');
+}
+
+    $("#formname").resetForm();
+</script>
+</head>
+<body>
+<div id="holder"><a href="index.html"><img src="logo.jpg" width="200px" height="100px"/></a>
+	 <div id="header">
+     
+	<ul>
+		<li><a href="contact.html">Contact</a></li>
+    	<li><a href="login.html">Login</a></li>
+    	<li><a href="overview.html">Explore</a></li>
+    	<li><a href="foodmenu.html">Food menu</a></li>
+    	<li><a href="book.html">Booking</a></li>
+        <li><a href="index.html">Home</a></li>
+    	</ul>
+    </div><!--header -->
+	<div id="login">
+		<h1>Login</h1>
+		<div id="p">
+		  <form action="http://localhost/Hotel management system/login.php" method="post">
+			<label for="number">Room Number:</label>&nbsp;&nbsp;
+			<input id="" name="rnumber" placeholder="Number" required="" type="text"> <br><br>
+	  
+			<label for="number">Room Id:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="" name="rid" placeholder="Id" required="" type="text"> <br><br>
+	  
+			<label for="cancel">Cancel:</label>
+			<br>
+			<input type="radio" name="cancel" value="yes">Yes
+			<input type="radio" name="cancel" value="no">No<br><br>
+	  
+			<input type="submit" name="submit" value="Ok"/>
+		  </form>
+		</div>
+	  </div>
+</div><!--holder-->
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-image: url(headback.jpeg);
+        }
+    	#holder{
+		border:0px solid;
+		width:1365px;
+		height:auto;
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;
+		margin-bottom:0px;
+		}
+	#header{
+		background-image:url(headback.jpeg);
+		background-repeat:no-repeat;
+		border:1px solid;
+		width:1362px;
+		height:100px;
+		margin-top:-100px;
+		margin-right:0px;
+		margin-left:0px;
+		}
+	#header ul{
+		list-style:none;
+		}
+	#header ul li a{
+		border:3px solid;
+		font-size:18px;
+		float:right;
+		background-color: lightseagreen;
+		width:110px;
+		height:50px;
+		text-align:center;
+		margin:0px 10px 0px 10px;
+		font-weight:bold;
+		line-height:50px;
+		border-radius:50px;
+		transition-property:all;
+		transition-duration:0.4s;
+		transition-timing-function:linear;
+		}	
+	#header ul li a{
+		text-decoration:none;
+		color:white;
+		}
+	#header ul li a:hover{
+				background-color:#00FF7F;
+				color:#4b388a;
+				
+				}
+	#header ul li a:active{
+		background-color:#00FFFF;
+	}
+        .contact-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80vh;
+        }
+    
+        .member {
+          width: 300px;
+          padding: 20px;
+          margin: 20px;
+          border: 1px solid #333;
+          border-radius: 5px;
+          text-align: center;
+          background-color: aliceblue;
+        }
+    
+        .member h2 {
+          margin-top: 0;
+        }
+    
+        .member p {
+          margin-bottom: 10px;
+        }
+        #sm {
+            height: 50px;
+            margin-top: -50px;
+        }
+    
+      </style>
+</head>
+<body>
+    <div id="holder"><a href="index.html"><img src="logo.jpg" width="200px" height="100px"/></a>
+        <div id="header">
+        
+       <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="overview.html">Explore</a></li>
+        <li><a href="foodmenu.html">Food menu</a></li>
+        <li><a href="book.html">Booking</a></li>
+          <li><a href="index.html">Home</a></li>
+           </ul>
+       </div>
+    <div class="contact-container">
+        <div class="member">
+          <h2>Mr Ahmad</h2>
+          <p>Manager</p>
+          <p>Email: ahmad123@gmail.com</p>
+          <p>Phone: 0300-2222222</p>
+        </div>
+    
+        <div class="member">
+          <h2>Mr Ali</h2>
+          <p>Staff Head</p>
+          <p>Email: ali@gmail.com</p>
+          <p>Phone: 0300-3333333</p>
+        </div>
+      </div>
+      <div id="sm">
+        <a href="https://www.facebook.com/"><img src="images/over/fb.jpg" width="50px" height="50px"/></a>
+		<a href="https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount#identifier"><img src="images/over/google.jpg" width="50px" height="50px"/></a>
+		<a href="https://twitter.com/login"><img src="images/over/tw.jpg" width="50px" height="50px"/></a>
+		<a href="https://in.yahoo.com/"><img src="images/over/yoo.png" width="50px" height="50px"/></a>
+      </div>
+</body>
+</html>

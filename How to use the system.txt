@@ -1,0 +1,24 @@
+To use the system, you need to follow the steps below :
+
+1) Go the folder named "Hotel Management System" in the DVD
+
+2) Open "index.html" file
+
+3) It will take you to the homepage. On the uppper rigt side you'll see list of 6 availabe options. Each option will take you to the desired page.
+
+4) There is a small chat option on the low right corner of the homepage. Use it to send a message. The message can be received in the databse.
+
+5) You can click the "Booking" button and it will take you to a page and you can fill out a form to book a room.
+
+6) Click in the "Food Menu" button to see the list of food items availabe. 
+
+7) Click on "Explore" button to see the list of rooms availabe
+
+8) Clik on "Login" button to login or chck in
+
+9) Click on "Contact" button to get contact info of hotel representatives.
+
+Remember, to use the database you need to install Xampp software on your pc and install php and Mysql from it. Then create a Mysql databse and connect php with it otherwise you won't be able to receive data into the database. 
+
+
+
